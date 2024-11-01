@@ -71,3 +71,6 @@ manifestmeta.thumbnail.names += "QtPositioning/Log File*"
 manifestmeta.highlighted.names = \
     "QtPositioning/Satellite Info" \
     "QtPositioning/Weather Info"
+
+# Allow zero warnings when testing documentation in CI
+warninglimit = 0
