@@ -3,8 +3,8 @@
 
 #include "qohosgeopositioninfosource.h"
 #include "qohosgeosatelliteinfosource.h"
-#include "qohosenums.h"
 #include "qohospositioncommon.h"
+#include "qohospositioningenums.h"
 #include <QtCore/private/qcore_ohos_p.h>
 #include <QtCore/private/qnapi_p.h>
 #include <QtCore/private/qohoscommon_p.h>
@@ -27,7 +27,7 @@ namespace {
 constexpr int updateAsOftenAsNecessaryInterval = 0;
 
 using SatelliteConstellationCategory =
-    QtOhos::enums::ohos::geoLocationManager::SatelliteConstellationCategory;
+    QtOhosPositioning::enums::ohos::geoLocationManager::SatelliteConstellationCategory;
 
 struct SatelliteInfo
 {

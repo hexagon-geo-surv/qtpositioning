@@ -2,8 +2,8 @@
 // SPDX-License-Identifier: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
 
 #include "qohosgeopositioninfosource.h"
-#include "qohosenums.h"
 #include "qohospositioncommon.h"
+#include "qohospositioningenums.h"
 #include <QtCore/private/qcore_ohos_p.h>
 #include <QtCore/private/qohoscommon_p.h>
 #include <QtCore/private/qohosjstools_p.h>
@@ -21,8 +21,8 @@ QT_BEGIN_NAMESPACE
 
 namespace {
 
-using UserActivityScenario = QtOhos::enums::ohos::geoLocationManager::UserActivityScenario;
-using LocationError = QtOhos::enums::ohos::geoLocationManager::LocationError;
+using UserActivityScenario = QtOhosPositioning::enums::ohos::geoLocationManager::UserActivityScenario;
+using LocationError = QtOhosPositioning::enums::ohos::geoLocationManager::LocationError;
 
 constexpr int coldStartMarginMs = 2 * 60 * 1000;
 constexpr int continuousUpdateTimerIntervalMs = 30 * 1000;
